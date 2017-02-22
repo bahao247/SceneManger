@@ -1,0 +1,52 @@
+public Class Node
+{
+	int idNode;
+	int static count;
+	Vector3 posNode;
+	
+	String[MAX_NAME] nameNode = "";
+	Node ChildNode[8];
+	
+	Node()
+	{
+		count = 0;
+	}
+	
+	Vector3 getPos()
+	{
+		return this.posNode;
+	}
+	
+	String getNameNode(int i)
+	{
+		this.ChildNode[i].nameNode;
+	}
+	
+	void setPos()
+	{
+		...
+	}
+	
+	bool createNode(String[MAX_NAME] nameNode)
+	{
+		if(this.count >= 8)
+			{
+				return;	
+			}
+			else
+			{
+				for(int i =0; i <8 ; i++)
+				{
+					if(nameNode == this.getNameNode(i))
+					{
+						return;
+					}
+				}
+				
+				this.ChildNode[this.count].nameNode = nameNode;
+				++this.ChildNode[this.count].count;
+			}
+	}
+	
+	
+}

@@ -1,0 +1,21 @@
+public Class Scene
+{
+	Vector3 posRoot;
+	Node *rootNode;
+	
+	Scene()
+	{
+		this.posRoot = Vector3(0,0,0);
+		Node *rootNode = Node("Root Node");
+	}
+	
+	Node getRootSceneNode()
+	{
+		return rootNode;
+	}
+	
+	void createChildSceneNode(String[MAX_NAME] nameNode)
+	{
+		rootNode->createNode(nameNode);
+	} 
+}
